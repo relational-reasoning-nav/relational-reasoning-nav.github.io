@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSSR6942QL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FSSR6942QL');
+    </script>
+
+    <title>Multi-Agent Dynamic Relational Reasoning for Social Robot Navigation</title>
+    <link rel="icon" type="image/png" href="img/favicon_2.png">
+
+    <meta name="description" content="Multi-Agent Dynamic Relational Reasoning for Social Robot Navigation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- <link rel="stylesheet" href="css/bulma.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bulma-carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bulma-slider.min.css"> -->
+    <link rel="stylesheet" href="css/bulma-myscope.css">
+
+    <!-- https://github.com/jgthms/bulma/issues/302#issuecomment-441890938 Follow this to use bulma style here without conflicts with app.css. I put bulma.min.css, bulma-carousel.min.css, and bulma-slider.min.css into a single file before applying less. -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="js/bulma-carousel.min.js"></script>
+    <script src="js/bulma-slider.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
+
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <span style="font-weight: 900;">Multi-Agent Dynamic Relational Reasoning for Social Robot Navigation</br>
+            </h2>
+        </div>
+        <!-- Jiachen Li*, Chuanbo Hua*, Jianpeng Yao, Hengbo Ma, Jinkyoo Park, Victoria Dax, Mykel J.
+Kochenderfer -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                <!-- <br> -->
+                <li><a href="https://jiachenli94.github.io/">Jiachen Li*</a></li>
+                <li><a href="https://cbhua.github.io/">Chuanbo Hua*</a></li>
+                <li><a href="https://jyao97.github.io/">Jianpeng Yao</a></li>
+                <li>Hengbo Ma</li>
+                <li>Jinkyoo Park</li>
+                <li>Victoria Dax</li>
+                <li><a href="https://mykel.kochenderfer.com/">Mykel J. Kochenderfer</a></li>
+                <!-- <br> -->
+                <br>
+                <br>
+                <div style="display: flex; justify-content: space-around; align-items: center; max-width: 1100px; margin: 0 auto;">                    <a href="https://robotics.ucr.edu/">
+                        <img src="img/UCR_logo.svg" style="height: 60px;">
+                    </a>
+                    <a href="https://www.kaist.ac.kr/en/">
+                        <img src="img/KAIST.svg" style="height: 50px;">
+                    </a>
+                    <a href="https://www.berkeley.edu/">
+                        <img src="img/UCB.svg" style="height: 50px;">
+                    </a>
+                    <a href="https://www.stanford.edu/">
+                        <img src="img/Stanford.svg" style="height: 50px;">
+                    </a>
+                </div>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row justify-content-md-center">
+            <div class="col-md-2 text-center">
+                <a href="https://arxiv.org/pdf/2407.17460">
+                    <img src="img/paper_img.png" height="45px">
+                    <h4><strong>Paper</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://www.youtube.com/watch?v=uXqPMaSyDek">
+                    <img src="img/youtube_icon.png" height="45px">
+                    <h4><strong>Video</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://drive.google.com/file/d/1WAwihUR_T3HY44rO6cSdz_zgJC4AOG1L/view?usp=sharing">
+                    <img src="img/google_drive.png" height="45px">
+                    <h4><strong>Code</strong></h4>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <br>
+                <h5 class="text-justify text-center">
+                    A novel framework for multi-agent social navigation that integrates dynamic relational reasoning and collaborative decision-making, achieving enhanced safety and efficiency in complex social environments through real-time adaptability and strategic interaction modeling.
+                </h5>
+                <br>
+            </div>
+        </div>
+
+        <div class='myscope'>
+          <section class="hero is-light is-small">
+            <div class="hero-body">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+
+                  <div class="item-0">
+                    <video poster="" id="0" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/movie1.mov" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-1">
+                    <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/movie2.mov" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-2">
+                    <video poster="" id="2" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/movie3.mov" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-3">
+                    <video poster="" id="4" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/movie4.mov" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item-4">
+                    <video poster="" id="5" autoplay controls muted loop playsinline height="100%">
+                        <source src="videos/movie5.mov" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <h5 class="text-justify text-center">
+                    Dynamic Group Engagement with Our Approach
+                </h5>
+            </div>
+        </div>
+        <br>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Social robot navigation can be helpful in various contexts of daily life but requires safe human-robot interactions and efficient trajectory planning.
+                    While modeling pairwise relations has been widely studied in multi-agent interacting systems, the ability to capture larger-scale group-wise activities is limited.
+                    In this paper, we propose a systematic relational reasoning approach with explicit inference of the underlying dynamically evolving relational structures, and we demonstrate its effectiveness for multi-agent trajectory prediction and social robot navigation.
+                    In addition to the edges between pairs of nodes (i.e., agents), we propose to infer hyperedges that adaptively connect multiple nodes to enable group-wise reasoning in an unsupervised manner.
+                    Our approach infers dynamically evolving relation graphs and hypergraphs to capture the evolution of relations, which the trajectory predictor employs to generate future states.
+                    Meanwhile, we propose to regularize the sharpness and sparsity of the learned relations and the smoothness of the relation evolution, which proves to enhance training stability and model performance.
+                    The proposed approach is validated on synthetic crowd simulations and real-world benchmark datasets.
+                    Experiments demonstrate that the approach infers reasonable relations and achieves state-of-the-art prediction performance. 
+                    In addition, we present a deep reinforcement learning (DRL) framework for social robot navigation, which incorporates relational reasoning and trajectory prediction systematically. 
+                    In a group-based crowd simulation, our method outperforms the strongest baseline by a significant margin in terms of safety, efficiency, and social compliance in dense, interactive scenarios.
+                </p>
+            </div>
+        </div>
+        
+        <!-- TODO -->
+        <!-- <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center">
+                <iframe width="560" height="285" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div> -->
+
+        <!-- <div class="row justify-content-md-center">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">LLMs can generate plans and write robot code 📝 but they can also make mistakes. How do we get LLMs to 𝘬𝘯𝘰𝘸 𝘸𝘩𝘦𝘯 𝘵𝘩𝘦𝘺 𝘥𝘰𝘯&#39;𝘵 𝘬𝘯𝘰𝘸 🤷 and ask for help?<br><br>Read more on how we can do this (with statistical guarantees) for LLMs on robots 👇<a href="https://t.co/D7mHGzNP3p">https://t.co/D7mHGzNP3p</a> <a href="https://t.co/M9lUqlZ5cB">pic.twitter.com/M9lUqlZ5cB</a></p>&mdash; Allen Z. Ren (@allenzren) <a href="https://twitter.com/allenzren/status/1677000811803443213?ref_src=twsrc%5Etfw">July 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <br>
+                <h3>
+                    Key Ideas and Contributions
+                </h3>
+                <p class="text-justify">
+                    <br><p style="text-align:center;">
+                        <image src="img/pipeline.png" width="100%">
+                    </p>
+                    <strong>1) Dynamic Relational Reasoning Framework</strong>: We introduce a systematic framework that infers dynamically evolving latent interaction graphs and hypergraphs from historical data, enabling effective multi-agent trajectory prediction and social robot navigation. <br>
+                    <strong>2) Hypergraph Construction and Regularization</strong>: We design a novel hypergraph attention mechanism and flexible hyperedge construction, coupled with mechanisms to ensure relation sharpness, evolution smoothness, and sparsity, improving training stability and reducing prediction error. <br>
+                    <strong>3) Enhanced DRL for Navigation</strong>: We modify the deep reinforcement learning (DRL) framework to leverage inferred relationships and predicted trajectories, enhancing safety and efficiency in social robot navigation while adhering to human social norms. <br>
+                    <strong>4) State-of-the-Art Results</strong>: Our trajectory prediction method with relational reasoning achieves SOTA performance on both simulated and real-world datasets. The DRL-based navigation method demonstrates superior performance, social awareness, and appropriate behavior in real-world and group-based crowd scenarios. <br>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <br>
+                <h3>
+                    Test Results
+                </h3>
+                <p class="text-justify">
+                    <br><p style="text-align:center;">
+                        <image src="img/tables_prediction.png" width="80%">
+                    </p>
+                    <p style="text-align:center;">
+                        <image src="img/table_nav.png" width="80%">
+                    </p>
+                    <strong>Quantitative Analysis</strong>: The experimental results show that our method achieves SOTA performance in both trajectory prediction of pedestrians and social navigation. Please refer to the paper for more details. <br>
+            </div>
+            <br>
+        </div>
+        <br>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <h3>
+                    Citation 
+                </h3>
+                <!-- TODO -->
+                <!-- <a href="">[arxiv version]</a> -->
+                <div class="form-group col-md-12">
+                    <textarea id="bibtex" class="form-control" rows="6" readonly>
+@article{li2024multi,
+  title={Multi-Agent Dynamic Relational Reasoning for Social Robot Navigation},
+  author={Li, Jiachen and Hua, Chuanbo and Yao, Jianpeng and Ma, Hengbo and Park, Jinkyoo and Dax, Victoria and Kochenderfer, Mykel J},
+  journal={arXiv preprint arXiv:2401.12275},
+  year={2024}
+}</textarea>
+                </div>
+            </div>
+        </div>
+        <!-- TODO -->
+        <!-- <div class="row justify-content-md-center mt-4">
+            <div class="col-md-12 col-lg-10">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                </p>
+            </div>
+        </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
